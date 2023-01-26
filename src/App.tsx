@@ -1,14 +1,13 @@
 import React from 'react';
 import './App.css';
 import { Button } from './components/Button';
+import { Container } from './components/Container';
 
 function App() {
 
   return (
     <div className="App">
-      <Button handleClick={(event, id) => {
-        console.log('Button Clicked', event, id)
-      }}/>
+      <Container styles={{border: "10px solid black", height: "100vh"}} />
     </div>
   );
 }
